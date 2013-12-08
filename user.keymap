@@ -10,10 +10,24 @@
 ;; of all the commands you can execute, start typing a word related to the thing you
 ;; want to do in between the square brackets (e.g. type "editor").
 
-{:+ {:app {"cmd-k" [:workspace.show]}
+{:+ {:app {"cmd-k" [:workspace.show]
+
+           ;;Tabset shortcuts
+           "ctrl-shift-]" [:tabset.next]
+           "ctrl-shift-[" [:tabset.prev]
+           "cmd-alt-=" [:tabset.new]
+           "cmd-alt--" [:tabset.close]}
 
      :editor {"alt-w" [:editor.watch.watch-selection]
               "alt-shift-w" [:editor.watch.unwatch]
+
+              ;;Real cheesey line duplicator
+              "cmd-shift-d" [:editor.select-line
+                             :editor.copy
+                             :editor.selection.clear
+                             :editor.new-line-indent
+                             :editor.paste
+                             :smart-indent-selection]
 
               ;;Comment toggling
               "cmd-/" [:toggle-comment-selection]
