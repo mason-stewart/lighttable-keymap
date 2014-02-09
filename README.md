@@ -2,4 +2,4 @@
 
 Nothing special, just a few keymappings I've added to [Light Table](http://www.lighttable.com/) to make editing cooler. Enjoy!
 
-Compatible with version 0.5.20 (at least).
+Currently used with version 0.6.2. At least **in theory** still compatible with version 0.5.20.
