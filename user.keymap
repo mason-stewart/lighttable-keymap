@@ -28,8 +28,8 @@
                              :editor.copy
                              :editor.selection.clear
                              :editor.new-line-indent
-                             :editor.paste
-                             :smart-indent-selection]
+                             :editor.line-start
+                             :editor.paste]
 
               ;; Why did I have to redefine these???
               "cmd-c" [:editor.copy]
